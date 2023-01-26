@@ -10,7 +10,10 @@ public class Factorial {
 		int result = 1;
 		System.out.println("Enter a number: ");
 		
-		int number = scanner.nextInt();
+		int number = 0;
+		if (scanner.hasNextInt()) {
+			number = scanner.nextInt();
+		}
 		
 		for (int i = 1; i <= number; i++) {
 			result *= i;
